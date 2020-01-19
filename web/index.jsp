@@ -21,5 +21,8 @@
   <a href="/servletDemo/responseDemo5">输出字节流responseDemo5</a><br>
   <a href="/servletDemo/checkCodeServlet">验证码checkCodeServlet</a><br>
   <a href="regist.html">验证码页面</a><br>
+  <a href="/servletDemo/servletContextDemo1">servletContextDemo1</a><br>
+  <a href="/servletDemo/servletContextDemo2">功能二：域对象：共享数据servletContextDemo2</a><br>
+  <a href="download.html">图片下载</a><br>
   </body>
 </html>
