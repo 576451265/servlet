@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script>
+        /*
+        分析：
+            点击超链接或者图片，需要换一张
+            1.给超链接和图片绑定单击时间
+            2.重新设置图片的src属性值
+         */
+        window.onload = function () {
+            //1.获取图片对象
+            var img = document.getElementById("checkCode");
+            //2.绑定单击事件
+            img.onclick = function () {
+                //加时间戳
+                var date = new Date().getTime();//毫秒值
+                img.src = "/servletDemo/checkCodeServlet?" + date;
+            }
+
+            var a = document.getElementById("change");
+            a.onclick = function () {
+                //加时间戳
+                var date = new Date().getTime();//毫秒值
+                img.src = "/servletDemo/checkCodeServlet?" + date;
+            }
+        }
+    </script>
 </head>
 <body>
 <form action="/servletDemo/RequestDemo3" method="post">
     <input type="text" placeholder="用户名" name="username"><br>
     <input type="text" placeholder="密  码" name="password"><br>
     <input type="submit" value="提交">
+    <img id="checkCode" src="/servletDemo/checkCodeServlet">
+    <a id="change" href="">看不清楚换一张？</a>
 </form>
 </body>
 </html>
