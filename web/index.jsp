@@ -15,6 +15,11 @@
     <input name = "username">
     <input type="submit" value="提交">
   </form>
-  <a href="/servletDemo/RequestDemo2">我从哪里来</a>
+  <a href="/servletDemo/RequestDemo2">我从哪里来</a><br>
+  <a href="/servletDemo/responseDemo1">responseDemo1</a><br>
+  <a href="/servletDemo/responseDemo4">输出字符流responseDemo4</a><br>
+  <a href="/servletDemo/responseDemo5">输出字节流responseDemo5</a><br>
+  <a href="/servletDemo/checkCodeServlet">验证码checkCodeServlet</a><br>
+  <a href="regist.html">验证码页面</a><br>
   </body>
 </html>
